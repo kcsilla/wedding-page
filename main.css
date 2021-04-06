@@ -55,7 +55,7 @@
 
   .wrapper{
     display: table-cell;
-    vertical-align: middle
+    vertical-align: middle;
   }
   .text{
     margin: 0 auto;
@@ -216,7 +216,25 @@
     margin: 1.5rem auto;
     background-color: #d2ba87;
   }
+  @media (min-width: 768px) {
 
+    .question-group {
+      display: inline-block;
+      width: 30%;
+      vertical-align: top;
+      padding: 1.5rem;
+      margin: .5rem;
+    }
+  
+    .question-group::after {
+      display: none;
+    }
+  
+    .question-group h3 {
+      text-align: left;
+    }
+  
+  }
 
   .question{
     font-weight: 700;

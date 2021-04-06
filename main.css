@@ -193,6 +193,7 @@
   .gift h2{
     margin-bottom: 1.5rem;
   }
+
   /*--FAQ--*/
   .faq{
     width: 100%;
@@ -243,7 +244,8 @@
   .answer{
     margin-bottom: 1.5rem;
   }
-  /*--CONTACT*/
+
+  /*--CONTACT--*/
   footer{
     height: 10vh;
     width: 100%;

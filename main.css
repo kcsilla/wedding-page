@@ -42,8 +42,8 @@
   .cover{
     background: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg") no-repeat 70% center/cover;
     display: table;
-    width: 100vw;
-    height: 100%;
+    width: 100%;
+    height: 100vh;
     text-align: center;
     
   }

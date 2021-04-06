@@ -248,7 +248,7 @@
   /*--CONTACT--*/
   footer{
     height: 10vh;
-    width: 100%;
+    width: 100vw;
     background-color:  #606060;
     display: table;
     text-align: center;

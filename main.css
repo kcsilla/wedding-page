@@ -118,8 +118,8 @@
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    jusify-content: space-around;
+    display: inline-block;
+    justify-content: space-around;
     }
   .prism img{
     height: 7.5rem;
@@ -135,17 +135,29 @@
   .prism div{
     font-family: 'Mulish', sans-serif;
   }
-  .prism::after{
-   /* display: block;
-    content: "";*/
+ .prism::after{
+    display: block;
+    content: "";
     background-color: #444349;;
     height: .1875rem;
     width: 25vw;
     margin: 1.5rem auto;
-  }
+  } 
+  @media (min-width:768px){
+    .prism{
+      display: inline-block;
+      width: 30%;
+      padding: 1.5rem;
+      margin: .5rem;
+    }
+    .prism::after{
+      display: none;
+    }
+  } 
+
   /*--PROGRAM--*/
   .programs{
-    width: 100vw;
+    width: 100%;
     text-align: left;
     background: hsla(100,0%,0%,.6);
     color: #d2ba87;
@@ -162,6 +174,13 @@
   .programs ul{
     letter-spacing: .025rem;
   }
+  @media (min-width: 768px){
+    .program-wrapper{
+      width: 30vw;
+      margin: 0 auto;
+    }
+  }
+
   
   /*--GIFT--*/
   .gift img{
@@ -176,7 +195,7 @@
   }
   /*--FAQ--*/
   .faq{
-    width: 100vw;
+    width: 100%;
     background: hsla(100,0%,0%,.6);
     color:  #d2ba87;
     text-align: center;
@@ -197,6 +216,8 @@
     margin: 1.5rem auto;
     background-color: #d2ba87;
   }
+
+
   .question{
     font-weight: 700;
     margin-bottom: .5rem;
@@ -207,7 +228,7 @@
   /*--CONTACT*/
   footer{
     height: 10vh;
-    width: 100vw;
+    width: 100%;
     background-color:  #606060;
     display: table;
     text-align: center;
@@ -227,45 +248,6 @@
   footer small{
     line-height: 2;
   }
-  /*--MEDIA HEADER--*/
-  
-
-  /*MEDIA-LOCATION*/
-  @media (min-width:768px){
-    .prism{
-      display: inline-block;
-      width: 30%;
-      padding: 1.5rem;
-      margin: .5rem;
-    }
-    .prism::after{
-      display: none;
-    }
-  }
-  /*MEDIA-PROGRAM*/
-  @media (min-width: 768px){
-    .program-wrapper{
-      width: 30vw;
-      margin: 0 auto;
-    }
-  }
-  /*MEDIA-FAQ*/
-  @media (min-width: 768px){
-    .question-group{
-      display: inline-block;
-      width: 30%;
-      vertical-align: top;
-      padding: 1.5rem;
-      margin: .5rem;
-    }
-    .question-group::after{
-      display: none;
-    }
-    .question-group h3{
-      text-align: left;
-    }
-  }
-  /*MEDIA-FOOTER*/
   @media (min-width: 768px){
     footer{
       min-height: 7vh;
